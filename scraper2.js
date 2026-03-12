@@ -16,8 +16,8 @@ async function clickSeeAllReviews(page) {
 
   const clicked = await page.evaluate(() => {
     const buttons = Array.from(document.querySelectorAll("button"));
-    const target = buttons.find((btn) =>
-      btn.innerText && btn.innerText.trim().includes("See all reviews")
+    const target = buttons.find(
+      (btn) => btn.innerText && btn.innerText.trim().includes("See all reviews")
     );
 
     if (target) {
@@ -33,16 +33,23 @@ async function clickSeeAllReviews(page) {
   }
 }
 
-async function scrollReviewsModal(page, maxScrolls = 20, delay = 1500) {
+async function scrollReviewsModal(page, maxScrolls = 40, delay = 400) {
   await page.waitForSelector("div.RHo1pe", { timeout: 30000 });
 
-  for (let i = 0; i < maxScrolls; i++) {
-    const didScroll = await page.evaluate(() => {
-      const reviewBlock = document.querySelector("div.RHo1pe");
-      if (!reviewBlock) return false;
+  let previousCount = 0;
+  let noGrowthRounds = 0;
 
-      // Find the nearest scrollable parent of a review block
-      let parent = reviewBlock.parentElement;
+  for (let i = 0; i < maxScrolls; i++) {
+    const result = await page.evaluate(() => {
+      const reviewBlocks = document.querySelectorAll("div.RHo1pe");
+      const currentCount = reviewBlocks.length;
+
+      const firstReview = reviewBlocks[0];
+      if (!firstReview) {
+        return { currentCount, didScroll: false };
+      }
+
+      let parent = firstReview.parentElement;
       while (parent) {
         const style = window.getComputedStyle(parent);
         const isScrollable =
@@ -50,22 +57,41 @@ async function scrollReviewsModal(page, maxScrolls = 20, delay = 1500) {
           parent.scrollHeight > parent.clientHeight;
 
         if (isScrollable) {
-          parent.scrollBy(0, 1200);
-          return true;
+          parent.scrollBy(0, 5000);
+          return { currentCount, didScroll: true };
         }
 
         parent = parent.parentElement;
       }
 
-      return false;
+      return { currentCount, didScroll: false };
     });
 
-    if (!didScroll) {
+    if (!result.didScroll) {
       console.log("Could not find a scrollable reviews container.");
       break;
     }
 
     await sleep(delay);
+
+    const newCount = await page.evaluate(
+      () => document.querySelectorAll("div.RHo1pe").length
+    );
+
+    console.log(`Scroll ${i + 1}: ${newCount} reviews loaded`);
+
+    if (newCount <= previousCount) {
+      noGrowthRounds += 1;
+    } else {
+      noGrowthRounds = 0;
+    }
+
+    previousCount = newCount;
+
+    if (noGrowthRounds >= 3) {
+      console.log("No new reviews loaded after several scrolls, stopping early.");
+      break;
+    }
   }
 }
 
@@ -81,29 +107,38 @@ async function main() {
       waitUntil: "networkidle2"
     });
 
-    await sleep(4000);
+    await sleep(3000);
 
-    // Click "See all reviews"
     await clickSeeAllReviews(page);
     console.log('Clicked "See all reviews"');
 
-    await sleep(3000);
+    await sleep(2500);
 
-    // Scroll inside the reviews modal
-    await scrollReviewsModal(page, 25, 1500);
+    await scrollReviewsModal(page, 5, 400);
     console.log("Finished scrolling reviews modal");
 
-    // Save raw HTML after modal content has loaded
     const html = await page.content();
-    fs.writeFileSync("pokemon_go_page_raw.html", html, "utf8");
+    fs.writeFileSync("pokemon_go_page_raw3.html", html, "utf8");
     console.log("Saved raw HTML");
 
-    // Extract reviews directly from DOM
     const reviews = await page.evaluate(() => {
       function extractStars(label) {
         if (!label) return null;
         const m = label.match(/Rated\s+(\d+)/i);
         return m ? Number(m[1]) : null;
+      }
+
+      function extractHelpfulCount(block) {
+        const helpfulContainer = block.querySelector(
+          'div[jscontroller="SWD8cc"][data-original-thumbs-up-count]'
+        );
+
+        if (!helpfulContainer) return 0;
+
+        const raw = helpfulContainer.getAttribute("data-original-thumbs-up-count");
+        const parsed = Number(raw);
+
+        return Number.isNaN(parsed) ? 0 : parsed;
       }
 
       const reviewBlocks = document.querySelectorAll("div.RHo1pe");
@@ -129,12 +164,15 @@ async function main() {
         const review_text =
           block.querySelector("div.h3YV2d")?.innerText.trim() || null;
 
+        const helpful_count = extractHelpfulCount(block);
+
         results.push({
           review_id,
           nickname,
           stars,
           date,
-          review_text
+          review_text,
+          helpful_count
         });
       });
 
@@ -142,7 +180,7 @@ async function main() {
     });
 
     fs.writeFileSync(
-      "pokemon_go_reviews.json",
+      "pokemon_go_reviews3.json",
       JSON.stringify(reviews, null, 2),
       "utf8"
     );
@@ -151,9 +189,7 @@ async function main() {
   } catch (error) {
     console.error("Scraping failed:", error);
   } finally {
-    // keep browser open if you want to inspect manually:
-    // comment this out if needed
-    // await browser.close();
+    await browser.close();
   }
 }
 
