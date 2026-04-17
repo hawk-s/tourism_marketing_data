@@ -54,42 +54,6 @@ async function clickSeeAllReviews(page) {
   }
 }
 
-async function switchToNewest(page) {
-  await page.waitForSelector("#sortBy_1", { timeout: 30000 });
-
-  await page.click("#sortBy_1");
-  await sleep(1000);
-
-  //await page.focus("#sortBy_1");
-  //await sleep(300);
-
-  await page.keyboard.press("ArrowDown");
-  await sleep(1000);
-
-  await page.keyboard.press("ArrowDown");
-  await sleep(1000);
-
-  await page.keyboard.press("Enter");
-  await sleep(2500);
-
-  const isNewest = await page.evaluate(() => {
-    const newestButton = document.querySelector('#sortBy_2[aria-label="Newest"]');
-    if (newestButton) return true;
-
-    const selected = Array.from(document.querySelectorAll('[role="button"]')).find((el) => {
-      const label = el.getAttribute("aria-label") || "";
-      const text = (el.innerText || "").trim();
-      return label.includes("Newest") || text.includes("Newest");
-    });
-
-    return !!selected;
-  });
-
-  if (!isNewest) {
-    throw new Error('Sort did not switch to "Newest".');
-  }
-}
-
 async function scrollReviewsModal(page, maxScrolls = 40, delay = 700) {
   await page.waitForSelector("div.RHo1pe", { timeout: 30000 });
 
@@ -178,9 +142,6 @@ async function main() {
 
     await sleep(2500);
 
-    await switchToNewest(page);
-    console.log('Switched sorting to "Newest"');
-
     await scrollReviewsModal(page, 10000, 700);
     console.log("Finished scrolling reviews modal");
 
@@ -189,7 +150,7 @@ async function main() {
     }
 
     const html = await page.content();
-    fs.writeFileSync("pokemon_go_page_raw8.html", html, "utf8");
+    fs.writeFileSync("pokemon_go_page_raw_most_relevant.html", html, "utf8");
     console.log("Saved raw HTML");
 
     const reviews = await page.evaluate(() => {
@@ -251,7 +212,7 @@ async function main() {
     });
 
     fs.writeFileSync(
-      "pokemon_go_reviews8.json",
+      "pokemon_go_reviews_most_relevant.json",
       JSON.stringify(reviews, null, 2),
       "utf8"
     );
@@ -260,7 +221,7 @@ async function main() {
   } catch (error) {
     console.error("Scraping failed:", error);
   } finally {
-    await browser.close(); 
+    await browser.close();
   }
 }
 
