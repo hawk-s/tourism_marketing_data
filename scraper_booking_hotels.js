@@ -226,16 +226,41 @@ async function extractHotelData(page, entry) {
       if (t) overall_score = Number(t.replace(",", ".")) || null;
     }
 
-    const score_label = trySelect(
+    // score_label: the text label e.g. "Wonderful" — lives in the aria-hidden
+    // review-score component inside the read-all button
+    let score_label = trySelect(
       ".review-score-widget__descriptor", ".bui-review-score__title",
       '[data-testid="review-score-label"]', ".review-score-widget-title"
     );
+    if (!score_label) {
+      // Current layout: aria-hidden block inside [data-testid="review-score-component"]
+      // <span class="f63b14ab7a f546354b44 becbee2f63">Wonderful</span>
+      try {
+        const scoreComp = document.querySelector('[data-testid="review-score-component"]');
+        if (scoreComp) {
+          // The label span is the first span inside the aria-hidden aa225776f2 div
+          const labelEl = scoreComp.querySelector('.aa225776f2 .f546354b44');
+          score_label = labelEl ? (labelEl.innerText || labelEl.textContent || "").trim() || null : null;
+        }
+      } catch (e) {}
+    }
 
     // ── Review count ─────────────────────────────────────────────────────────────
-    const rev_text = trySelect(
+    let rev_text = trySelect(
       ".reviews_stagger_effect_score_count", ".bui-review-score__text",
       '[data-testid="review-score-count"]', ".review-score-widget__subtext"
     );
+    if (!rev_text) {
+      // Current layout: "·\u00a01,287 reviews" in the second span of the aria-hidden block
+      // <span class="f63b14ab7a fb14de7f14 eaa8455879">&nbsp;·&nbsp;1,287 reviews</span>
+      try {
+        const scoreComp = document.querySelector('[data-testid="review-score-component"]');
+        if (scoreComp) {
+          const countEl = scoreComp.querySelector('.aa225776f2 .fb14de7f14');
+          rev_text = countEl ? (countEl.innerText || countEl.textContent || "").trim() || null : null;
+        }
+      } catch (e) {}
+    }
     const num_reviews = rev_text ? parseInt(rev_text.replace(/[^0-9]/g, ""), 10) || null : null;
 
     // ── Subscores ────────────────────────────────────────────────────────────────
@@ -328,11 +353,25 @@ async function extractHotelData(page, entry) {
       // Full categorized groups – each [data-testid="facility-group-container"]
       document.querySelectorAll('[data-testid="facility-group-container"]').forEach(group => {
         // Category name lives in the first h3's .d31c9df771 div
+        // The div contains an SVG icon span followed by the text node — we must
+        // strip the icon span before reading, otherwise SVG path data pollutes the string.
         const firstH3   = group.querySelector("h3");
         const catNameEl = firstH3 ? firstH3.querySelector(".d31c9df771") : null;
-        const category  = catNameEl
-          ? (catNameEl.innerText || catNameEl.textContent || "").trim()
-          : (firstH3 ? (firstH3.innerText || firstH3.textContent || "").trim() : "Other");
+        let category = "";
+        if (catNameEl) {
+          const clone = catNameEl.cloneNode(true);
+          const icon = clone.querySelector('[data-testid="facility-group-icon"]');
+          if (icon) icon.remove();
+          category = (clone.innerText || clone.textContent || "").trim();
+        }
+        if (!category && firstH3) {
+          // fallback: read text nodes only from h3 itself
+          category = Array.from(firstH3.childNodes)
+            .filter(n => n.nodeType === 3)
+            .map(n => n.textContent.trim())
+            .join(" ").trim();
+        }
+        if (!category) category = "Other";
         if (!category) return;
 
         // Group-level note (e.g. "Wifi is available in all areas and is free of charge.")
@@ -395,7 +434,26 @@ async function extractHotelData(page, entry) {
       if (lngM) lng = Number(lngM[1]);
     } catch (e) {}
 
-    // ── Awards / certificates / sustainability ───────────────────────────────────
+    // ── Sustainability certifications ────────────────────────────────────────────
+    // Section: h2 containing "Sustainability", certs listed as [aria-label="Certification name"]
+    let sustainability = null;
+    try {
+      // Find the sustainability section by its h2 heading text
+      const sustainSection = Array.from(document.querySelectorAll("section")).find(s => {
+        const h2 = s.querySelector("h2");
+        return h2 && (h2.textContent || "").trim().toLowerCase().includes("sustainability");
+      });
+      if (sustainSection) {
+        const descEl = sustainSection.querySelector(".da8a6fe12c.fb14de7f14");
+        const description = descEl ? (descEl.textContent || "").trim().replace(/\s+/g, " ") : null;
+        const certifications = Array.from(
+          sustainSection.querySelectorAll('[aria-label="Certification name"]')
+        ).map(el => (el.textContent || "").trim()).filter(Boolean);
+        sustainability = { description, certifications };
+      }
+    } catch (e) {}
+
+    // ── Awards (legacy selectors kept as fallback) ───────────────────────────────
     const awards = trySelectAll(
       ".hp-awards__content", '[data-testid="sustainability-certificate"]',
       ".sustainability-award-text", ".hp_certificate_award"
@@ -416,7 +474,11 @@ async function extractHotelData(page, entry) {
       }
       document.querySelectorAll('[data-testid="poi-block"]').forEach(block => {
         const h3 = block.querySelector("h3");
-        const category = h3 ? (h3.innerText || h3.textContent || "").trim() : "Other";
+        // Read the title from the inner div (e.g. "What's nearby", "Top attractions").
+        // Using the child div is more reliable than h3.innerText in headless Chrome
+        // because innerText can return "" when the text is inside a block-level child.
+        const titleEl = h3 ? (h3.querySelector(".e7addce19e") || h3.querySelector("div") || h3) : null;
+        const category = (titleEl ? (titleEl.innerText || titleEl.textContent || "") : "").trim() || "Other";
         if (!category) return;
         const items = [];
         block.querySelectorAll('[data-testid="poi-block-list"] li').forEach(li => {
@@ -454,6 +516,7 @@ async function extractHotelData(page, entry) {
       highlights,
       facilities,
       facilities_grouped,
+      sustainability,
       awards,
       area_info,
       lat,
