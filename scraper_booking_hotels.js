@@ -148,6 +148,20 @@ async function expandDescription(page) {
   if (clicked) await new Promise(r => setTimeout(r, 1000));
 }
 
+// ─── Scroll to facilities section to trigger lazy-load ───────────────────────
+async function scrollToFacilities(page) {
+  try {
+    await page.evaluate(() => {
+      const el =
+        document.getElementById("hp_facilities_box") ||
+        document.querySelector('[data-testid="property-most-popular-facilities-wrapper"]') ||
+        document.querySelector('[data-testid="facility-group-container"]');
+      if (el) el.scrollIntoView({ behavior: "instant", block: "center" });
+    });
+    await sleep(1800);
+  } catch (e) {}
+}
+
 // ─── Hotel metadata extraction ─────────────────────────────────────────────────
 async function extractHotelData(page, entry) {
   return await page.evaluate((entry) => {
@@ -341,13 +355,17 @@ async function extractHotelData(page, entry) {
     // and facilities: flat deduplicated array of names (for quick lookups).
     const facilities_grouped = {};
     const facilitySet = new Set();
+    const most_popular_facilities = [];
     try {
-      // Most popular facilities widget (flat, no grouping)
+      // Most popular facilities widget (flat, no grouping) — kept as its own field
       document.querySelectorAll(
         '[data-testid="property-most-popular-facilities-wrapper"] .f6b6d2a959'
       ).forEach(el => {
         const t = safeText(el);
-        if (t && t.length > 1) facilitySet.add(t);
+        if (t && t.length > 1) {
+          most_popular_facilities.push(t);
+          facilitySet.add(t);
+        }
       });
 
       // Full categorized groups – each [data-testid="facility-group-container"]
@@ -359,10 +377,11 @@ async function extractHotelData(page, entry) {
         const catNameEl = firstH3 ? firstH3.querySelector(".d31c9df771") : null;
         let category = "";
         if (catNameEl) {
-          const clone = catNameEl.cloneNode(true);
-          const icon = clone.querySelector('[data-testid="facility-group-icon"]');
-          if (icon) icon.remove();
-          category = (clone.innerText || clone.textContent || "").trim();
+          category = Array.from(catNameEl.childNodes)
+            .filter(n => n.nodeType === 3)
+            .map(n => n.textContent.trim())
+            .filter(Boolean)
+            .join(" ").trim();
         }
         if (!category && firstH3) {
           // fallback: read text nodes only from h3 itself
@@ -514,6 +533,7 @@ async function extractHotelData(page, entry) {
       subscores,
       description,
       highlights,
+      most_popular_facilities,
       facilities,
       facilities_grouped,
       sustainability,
@@ -901,6 +921,7 @@ async function main() {
 
         await dismissPopups(page);
         await expandDescription(page);
+        await scrollToFacilities(page);
 
         // ── Hotel-level data ─────────────────────────────────────────────────────
         const hotelData = await extractHotelData(page, entry);
@@ -910,8 +931,9 @@ async function main() {
         );
 
         // ── Reviews ──────────────────────────────────────────────────────────────
-        const hotelReviews = await extractAllReviews(page, entry.url);
-        console.log(`  Collected ${hotelReviews.length} reviews`);
+        // const hotelReviews = await extractAllReviews(page, entry.url);
+        // console.log(`  Collected ${hotelReviews.length} reviews`);
+        const hotelReviews = [];
 
         hotels.push(hotelData);
         reviews.push(...hotelReviews);

@@ -10,8 +10,8 @@
     "star_rating": 5,
     "property_type": "hotel",
     "overall_score": 8.8,
-    "score_label": null,
-    "num_reviews": null,
+    "score_label": "Excellent",
+    "num_reviews": 3639,
     "subscores": {
       "Staff": 9.4,
       "Facilities": 9,
@@ -29,7 +29,17 @@
       "Continental, Gluten-free, American, Buffet",
       "Free private parking available at the hotel"
     ],
-    "facilities": [
+    "most_popular_facilities": [
+      "2 swimming pools",
+      "Spa",
+      "Free parking",
+      "Free Wifi",
+      "Family rooms",
+      "3 restaurants",
+      "Fitness center",
+      "Tea/Coffee Maker in All Rooms",
+      "Bar",
+      "Wonderful Breakfast",
       "2 swimming pools",
       "Spa",
       "Free parking",
@@ -41,10 +51,854 @@
       "Bar",
       "Wonderful Breakfast"
     ],
-    "facilities_grouped": {},
+    "facilities": [
+      "2 swimming pools",
+      "Spa",
+      "Free parking",
+      "Free Wifi",
+      "Family rooms",
+      "3 restaurants",
+      "Fitness center",
+      "Tea/Coffee Maker in All Rooms",
+      "Bar",
+      "Wonderful Breakfast",
+      "Parking",
+      "Private bathroom",
+      "Air conditioning",
+      "Bathtub",
+      "Toilet paper",
+      "Towels",
+      "Additional bathroom",
+      "Bidet",
+      "Guest bathroom",
+      "Bathtub or shower",
+      "Slippers",
+      "Toilet",
+      "Bathrobe",
+      "Hairdryer",
+      "Shower",
+      "Linens",
+      "Wardrobe or closet",
+      "Outdoor furniture",
+      "Sun deck",
+      "Terrace",
+      "Garden",
+      "Dining table",
+      "Coffee machine",
+      "Toaster",
+      "Stovetop",
+      "Kitchenware",
+      "Electric kettle",
+      "Dishwasher",
+      "Microwave",
+      "Refrigerator",
+      "Kitchenette",
+      "Socket near the bed",
+      "Sofa bed",
+      "Bicycle rental",
+      "Live sports events (broadcast)",
+      "Themed dinners",
+      "Walking tours",
+      "Movie nights",
+      "Hiking",
+      "Pool table",
+      "Playground",
+      "Game room",
+      "Sofa",
+      "Sitting area",
+      "Flat-screen TV",
+      "Cable channels",
+      "Satellite channels",
+      "Telephone",
+      "TV",
+      "Coffee house on site",
+      "Wine/Champagne",
+      "Kids' meals",
+      "Special diet meals (on request)",
+      "Snack bar",
+      "Restaurant",
+      "Tea/Coffee maker",
+      "Parking garage",
+      "Electric vehicle charging station",
+      "Accessible parking",
+      "Invoice provided",
+      "Concierge",
+      "Baggage storage",
+      "24-hour front desk",
+      "Babysitting/Child services",
+      "Outdoor play equipment for kids",
+      "Indoor play area",
+      "Daily housekeeping",
+      "Ironing service",
+      "Laundry",
+      "Business center",
+      "Meeting/Banquet facilities",
+      "Fire extinguishers",
+      "CCTV outside property",
+      "CCTV in common areas",
+      "Smoke alarms",
+      "Security alarm",
+      "Key card access",
+      "24-hour security",
+      "Safe",
+      "Shuttle service",
+      "Shared lounge/TV area",
+      "Designated smoking area",
+      "Smoke-free property",
+      "Wake-up service",
+      "Heating",
+      "Soundproof",
+      "Car rental",
+      "Laptop safe",
+      "Elevator",
+      "Facilities for disabled guests",
+      "Airport shuttle",
+      "Non-smoking rooms",
+      "Room service",
+      "Lowered sink",
+      "Toilet with grab rails",
+      "Wheelchair accessible",
+      "Upper floors accessible by elevator",
+      "Open all year",
+      "All ages welcome",
+      "Pool is on rooftop",
+      "Pool bar",
+      "Beach chairs/Loungers",
+      "Beach umbrellas",
+      "Fenced pool",
+      "Heated pool",
+      "Pool/Beach towels",
+      "Pool cover",
+      "Yoga classes",
+      "Fitness",
+      "Full-body massage",
+      "Hand massage",
+      "Head massage",
+      "Couples' massage",
+      "Foot massage",
+      "Neck massage",
+      "Back massage",
+      "Spa/Wellness packages",
+      "Spa lounge/Relaxation area",
+      "Spa facilities",
+      "Turkish/Steam Bath",
+      "Massage",
+      "Sauna",
+      "English",
+      "Spanish",
+      "Portuguese"
+    ],
+    "facilities_grouped": {
+      "Great for your stay": {
+        "note": null,
+        "items": [
+          {
+            "name": "Parking",
+            "additional_charge": false
+          },
+          {
+            "name": "3 restaurants",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa",
+            "additional_charge": false
+          },
+          {
+            "name": "Private bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Air conditioning",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathtub",
+            "additional_charge": false
+          },
+          {
+            "name": "Free Wifi",
+            "additional_charge": false
+          },
+          {
+            "name": "Free parking",
+            "additional_charge": false
+          },
+          {
+            "name": "Family rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Fitness center",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Private bathroom": {
+        "note": null,
+        "items": [
+          {
+            "name": "Toilet paper",
+            "additional_charge": false
+          },
+          {
+            "name": "Towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Additional bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Bidet",
+            "additional_charge": false
+          },
+          {
+            "name": "Guest bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathtub or shower",
+            "additional_charge": false
+          },
+          {
+            "name": "Slippers",
+            "additional_charge": false
+          },
+          {
+            "name": "Toilet",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathrobe",
+            "additional_charge": false
+          },
+          {
+            "name": "Hairdryer",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathtub",
+            "additional_charge": false
+          },
+          {
+            "name": "Shower",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Bedroom": {
+        "note": null,
+        "items": [
+          {
+            "name": "Linens",
+            "additional_charge": false
+          },
+          {
+            "name": "Wardrobe or closet",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Outdoors": {
+        "note": null,
+        "items": [
+          {
+            "name": "Outdoor furniture",
+            "additional_charge": false
+          },
+          {
+            "name": "Sun deck",
+            "additional_charge": false
+          },
+          {
+            "name": "Terrace",
+            "additional_charge": false
+          },
+          {
+            "name": "Garden",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Kitchen": {
+        "note": null,
+        "items": [
+          {
+            "name": "Dining table",
+            "additional_charge": false
+          },
+          {
+            "name": "Coffee machine",
+            "additional_charge": false
+          },
+          {
+            "name": "Toaster",
+            "additional_charge": false
+          },
+          {
+            "name": "Stovetop",
+            "additional_charge": false
+          },
+          {
+            "name": "Kitchenware",
+            "additional_charge": false
+          },
+          {
+            "name": "Electric kettle",
+            "additional_charge": false
+          },
+          {
+            "name": "Dishwasher",
+            "additional_charge": false
+          },
+          {
+            "name": "Microwave",
+            "additional_charge": false
+          },
+          {
+            "name": "Refrigerator",
+            "additional_charge": false
+          },
+          {
+            "name": "Kitchenette",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Room amenities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Socket near the bed",
+            "additional_charge": false
+          },
+          {
+            "name": "Sofa bed",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Activities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Bicycle rental",
+            "additional_charge": true
+          },
+          {
+            "name": "Live sports events (broadcast)",
+            "additional_charge": false
+          },
+          {
+            "name": "Themed dinners",
+            "additional_charge": true
+          },
+          {
+            "name": "Walking tours",
+            "additional_charge": false
+          },
+          {
+            "name": "Movie nights",
+            "additional_charge": false
+          },
+          {
+            "name": "Hiking",
+            "additional_charge": true
+          },
+          {
+            "name": "Pool table",
+            "additional_charge": false
+          },
+          {
+            "name": "Playground",
+            "additional_charge": false
+          },
+          {
+            "name": "Game room",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Living Area": {
+        "note": null,
+        "items": [
+          {
+            "name": "Sofa",
+            "additional_charge": false
+          },
+          {
+            "name": "Sitting area",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Media & Technology": {
+        "note": null,
+        "items": [
+          {
+            "name": "Flat-screen TV",
+            "additional_charge": false
+          },
+          {
+            "name": "Cable channels",
+            "additional_charge": false
+          },
+          {
+            "name": "Satellite channels",
+            "additional_charge": false
+          },
+          {
+            "name": "Telephone",
+            "additional_charge": false
+          },
+          {
+            "name": "TV",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Food & Drink": {
+        "note": null,
+        "items": [
+          {
+            "name": "Coffee house on site",
+            "additional_charge": false
+          },
+          {
+            "name": "Wine/Champagne",
+            "additional_charge": true
+          },
+          {
+            "name": "Kids' meals",
+            "additional_charge": true
+          },
+          {
+            "name": "Special diet meals (on request)",
+            "additional_charge": false
+          },
+          {
+            "name": "Snack bar",
+            "additional_charge": false
+          },
+          {
+            "name": "Bar",
+            "additional_charge": false
+          },
+          {
+            "name": "Restaurant",
+            "additional_charge": false
+          },
+          {
+            "name": "Tea/Coffee maker",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Internet": {
+        "note": "Wifi is available in all areas and is free of charge.",
+        "items": []
+      },
+      "Parking": {
+        "note": "Free private parking is available on site (reservation is not needed).",
+        "items": [
+          {
+            "name": "Parking garage",
+            "additional_charge": false
+          },
+          {
+            "name": "Electric vehicle charging station",
+            "additional_charge": false
+          },
+          {
+            "name": "Accessible parking",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Front Desk Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Invoice provided",
+            "additional_charge": false
+          },
+          {
+            "name": "Concierge",
+            "additional_charge": false
+          },
+          {
+            "name": "Baggage storage",
+            "additional_charge": false
+          },
+          {
+            "name": "24-hour front desk",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Entertainment & Family Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Babysitting/Child services",
+            "additional_charge": true
+          },
+          {
+            "name": "Outdoor play equipment for kids",
+            "additional_charge": false
+          },
+          {
+            "name": "Indoor play area",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Cleaning Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Daily housekeeping",
+            "additional_charge": false
+          },
+          {
+            "name": "Ironing service",
+            "additional_charge": true
+          },
+          {
+            "name": "Laundry",
+            "additional_charge": true
+          }
+        ]
+      },
+      "Business Facilities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Business center",
+            "additional_charge": false
+          },
+          {
+            "name": "Meeting/Banquet facilities",
+            "additional_charge": true
+          }
+        ]
+      },
+      "Safety & security": {
+        "note": null,
+        "items": [
+          {
+            "name": "Fire extinguishers",
+            "additional_charge": false
+          },
+          {
+            "name": "CCTV outside property",
+            "additional_charge": false
+          },
+          {
+            "name": "CCTV in common areas",
+            "additional_charge": false
+          },
+          {
+            "name": "Smoke alarms",
+            "additional_charge": false
+          },
+          {
+            "name": "Security alarm",
+            "additional_charge": false
+          },
+          {
+            "name": "Key card access",
+            "additional_charge": false
+          },
+          {
+            "name": "24-hour security",
+            "additional_charge": false
+          },
+          {
+            "name": "Safe",
+            "additional_charge": false
+          }
+        ]
+      },
+      "General": {
+        "note": null,
+        "items": [
+          {
+            "name": "Shuttle service",
+            "additional_charge": true
+          },
+          {
+            "name": "Shared lounge/TV area",
+            "additional_charge": false
+          },
+          {
+            "name": "Designated smoking area",
+            "additional_charge": false
+          },
+          {
+            "name": "Air conditioning",
+            "additional_charge": false
+          },
+          {
+            "name": "Smoke-free property",
+            "additional_charge": false
+          },
+          {
+            "name": "Wake-up service",
+            "additional_charge": false
+          },
+          {
+            "name": "Heating",
+            "additional_charge": false
+          },
+          {
+            "name": "Soundproof",
+            "additional_charge": false
+          },
+          {
+            "name": "Car rental",
+            "additional_charge": false
+          },
+          {
+            "name": "Laptop safe",
+            "additional_charge": false
+          },
+          {
+            "name": "Elevator",
+            "additional_charge": false
+          },
+          {
+            "name": "Family rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Facilities for disabled guests",
+            "additional_charge": false
+          },
+          {
+            "name": "Airport shuttle",
+            "additional_charge": true
+          },
+          {
+            "name": "Non-smoking rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Room service",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Accessibility": {
+        "note": null,
+        "items": [
+          {
+            "name": "Lowered sink",
+            "additional_charge": false
+          },
+          {
+            "name": "Toilet with grab rails",
+            "additional_charge": false
+          },
+          {
+            "name": "Wheelchair accessible",
+            "additional_charge": false
+          },
+          {
+            "name": "Upper floors accessible by elevator",
+            "additional_charge": false
+          }
+        ]
+      },
+      "2 swimming pools": {
+        "note": null,
+        "items": [
+          {
+            "name": "Open all year",
+            "additional_charge": false
+          },
+          {
+            "name": "All ages welcome",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool is on rooftop",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool bar",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          },
+          {
+            "name": "Fenced pool",
+            "additional_charge": false
+          },
+          {
+            "name": "Open all year",
+            "additional_charge": false
+          },
+          {
+            "name": "All ages welcome",
+            "additional_charge": false
+          },
+          {
+            "name": "Heated pool",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool/Beach towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool cover",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          },
+          {
+            "name": "Fenced pool",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Spa": {
+        "note": null,
+        "items": [
+          {
+            "name": "Yoga classes",
+            "additional_charge": false
+          },
+          {
+            "name": "Fitness",
+            "additional_charge": false
+          },
+          {
+            "name": "Full-body massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Hand massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Head massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Couples' massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Foot massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Neck massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Back massage",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa/Wellness packages",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa lounge/Relaxation area",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa facilities",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          },
+          {
+            "name": "Turkish/Steam Bath",
+            "additional_charge": true
+          },
+          {
+            "name": "Massage",
+            "additional_charge": true
+          },
+          {
+            "name": "Spa",
+            "additional_charge": true
+          },
+          {
+            "name": "Fitness center",
+            "additional_charge": false
+          },
+          {
+            "name": "Sauna",
+            "additional_charge": true
+          }
+        ]
+      },
+      "Languages Spoken": {
+        "note": null,
+        "items": [
+          {
+            "name": "English",
+            "additional_charge": false
+          },
+          {
+            "name": "Spanish",
+            "additional_charge": false
+          },
+          {
+            "name": "Portuguese",
+            "additional_charge": false
+          }
+        ]
+      }
+    },
+    "sustainability": null,
     "awards": [],
     "area_info": {
-      "Top attractions": [
+      "What's nearby": [
+        {
+          "name": "Igreja Matriz Nossa Sra. das Dores",
+          "type": null,
+          "distance_m": 5000
+        },
+        {
+          "name": "Igreja da Misericórdia de Monchique",
+          "type": null,
+          "distance_m": 5000
+        },
+        {
+          "name": "Serra de Monchique",
+          "type": null,
+          "distance_m": 9000
+        },
+        {
+          "name": "Parque Aventura da Foia",
+          "type": null,
+          "distance_m": 10000
+        },
         {
           "name": "Monumentos Megalíticos de Alcalar",
           "type": null,
@@ -102,7 +956,7 @@
     },
     "lat": 37.27964463072998,
     "lng": -8.55112910270691,
-    "scraped_at": "2026-05-11T12:31:55.734Z"
+    "scraped_at": "2026-05-11T13:32:34.316Z"
   },
   {
     "url": "https://www.booking.com/hotel/pt/vila-relaxmountain.html",
@@ -115,8 +969,8 @@
     "star_rating": 5,
     "property_type": "bed_and_breakfast",
     "overall_score": 9.7,
-    "score_label": null,
-    "num_reviews": null,
+    "score_label": "Exceptional",
+    "num_reviews": 153,
     "subscores": {
       "Staff": 9.8,
       "Facilities": 9.5,
@@ -133,7 +987,14 @@
       "Buffet",
       "Free Private Parking Available On Site"
     ],
-    "facilities": [
+    "most_popular_facilities": [
+      "Outdoor swimming pool",
+      "Non-smoking rooms",
+      "Free parking",
+      "Facilities for disabled guests",
+      "Free Wifi",
+      "Family rooms",
+      "Very Good Breakfast",
       "Outdoor swimming pool",
       "Non-smoking rooms",
       "Free parking",
@@ -142,12 +1003,451 @@
       "Family rooms",
       "Very Good Breakfast"
     ],
-    "facilities_grouped": {},
+    "facilities": [
+      "Outdoor swimming pool",
+      "Non-smoking rooms",
+      "Free parking",
+      "Facilities for disabled guests",
+      "Free Wifi",
+      "Family rooms",
+      "Very Good Breakfast",
+      "Parking",
+      "Private bathroom",
+      "Air conditioning",
+      "View",
+      "Terrace",
+      "Flat-screen TV",
+      "Toilet paper",
+      "Towels",
+      "Toilet",
+      "Free toiletries",
+      "Hairdryer",
+      "Shower",
+      "Linens",
+      "Wardrobe or closet",
+      "Garden view",
+      "Outdoor furniture",
+      "Patio",
+      "Garden",
+      "Dining table",
+      "Refrigerator",
+      "Socket near the bed",
+      "Dining area",
+      "Sofa",
+      "Sitting area",
+      "Streaming service (like Netflix)",
+      "TV",
+      "Coffee house on site",
+      "Wine/Champagne",
+      "Minibar",
+      "Accessible parking",
+      "Shared lounge/TV area",
+      "Fire extinguishers",
+      "Smoke alarms",
+      "Key access",
+      "Carbon monoxide detector",
+      "Designated smoking area",
+      "Tile/Marble floor",
+      "Heating",
+      "Soundproof",
+      "Private entrance",
+      "Soundproof rooms",
+      "Ironing facilities",
+      "Iron",
+      "Raised toilet",
+      "Wheelchair accessible",
+      "Opening times",
+      "Open all year",
+      "All ages welcome",
+      "Pool/Beach towels",
+      "Beach umbrellas",
+      "German",
+      "English"
+    ],
+    "facilities_grouped": {
+      "Great for your stay": {
+        "note": null,
+        "items": [
+          {
+            "name": "Parking",
+            "additional_charge": false
+          },
+          {
+            "name": "Private bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Air conditioning",
+            "additional_charge": false
+          },
+          {
+            "name": "View",
+            "additional_charge": false
+          },
+          {
+            "name": "Free Wifi",
+            "additional_charge": false
+          },
+          {
+            "name": "Terrace",
+            "additional_charge": false
+          },
+          {
+            "name": "Free parking",
+            "additional_charge": false
+          },
+          {
+            "name": "Family rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Flat-screen TV",
+            "additional_charge": false
+          },
+          {
+            "name": "Non-smoking rooms",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Private bathroom": {
+        "note": null,
+        "items": [
+          {
+            "name": "Toilet paper",
+            "additional_charge": false
+          },
+          {
+            "name": "Towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Toilet",
+            "additional_charge": false
+          },
+          {
+            "name": "Free toiletries",
+            "additional_charge": false
+          },
+          {
+            "name": "Hairdryer",
+            "additional_charge": false
+          },
+          {
+            "name": "Shower",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Bedroom": {
+        "note": null,
+        "items": [
+          {
+            "name": "Linens",
+            "additional_charge": false
+          },
+          {
+            "name": "Wardrobe or closet",
+            "additional_charge": false
+          }
+        ]
+      },
+      "View": {
+        "note": null,
+        "items": [
+          {
+            "name": "Garden view",
+            "additional_charge": false
+          },
+          {
+            "name": "View",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Outdoors": {
+        "note": null,
+        "items": [
+          {
+            "name": "Outdoor furniture",
+            "additional_charge": false
+          },
+          {
+            "name": "Patio",
+            "additional_charge": false
+          },
+          {
+            "name": "Terrace",
+            "additional_charge": false
+          },
+          {
+            "name": "Garden",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Kitchen": {
+        "note": null,
+        "items": [
+          {
+            "name": "Dining table",
+            "additional_charge": false
+          },
+          {
+            "name": "Refrigerator",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Room amenities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Socket near the bed",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Living Area": {
+        "note": null,
+        "items": [
+          {
+            "name": "Dining area",
+            "additional_charge": false
+          },
+          {
+            "name": "Sofa",
+            "additional_charge": false
+          },
+          {
+            "name": "Sitting area",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Media & Technology": {
+        "note": null,
+        "items": [
+          {
+            "name": "Streaming service (like Netflix)",
+            "additional_charge": false
+          },
+          {
+            "name": "Flat-screen TV",
+            "additional_charge": false
+          },
+          {
+            "name": "TV",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Food & Drink": {
+        "note": null,
+        "items": [
+          {
+            "name": "Coffee house on site",
+            "additional_charge": false
+          },
+          {
+            "name": "Wine/Champagne",
+            "additional_charge": true
+          },
+          {
+            "name": "Minibar",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Internet": {
+        "note": "Wifi is available in all areas and is free of charge.",
+        "items": []
+      },
+      "Parking": {
+        "note": "Free private parking is available on site (reservation is not needed).",
+        "items": [
+          {
+            "name": "Accessible parking",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Shared lounge/TV area",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Safety & security": {
+        "note": null,
+        "items": [
+          {
+            "name": "Fire extinguishers",
+            "additional_charge": false
+          },
+          {
+            "name": "Smoke alarms",
+            "additional_charge": false
+          },
+          {
+            "name": "Key access",
+            "additional_charge": false
+          }
+        ]
+      },
+      "General": {
+        "note": null,
+        "items": [
+          {
+            "name": "Carbon monoxide detector",
+            "additional_charge": false
+          },
+          {
+            "name": "Designated smoking area",
+            "additional_charge": false
+          },
+          {
+            "name": "Air conditioning",
+            "additional_charge": false
+          },
+          {
+            "name": "Tile/Marble floor",
+            "additional_charge": false
+          },
+          {
+            "name": "Heating",
+            "additional_charge": false
+          },
+          {
+            "name": "Soundproof",
+            "additional_charge": false
+          },
+          {
+            "name": "Private entrance",
+            "additional_charge": false
+          },
+          {
+            "name": "Soundproof rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Family rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Ironing facilities",
+            "additional_charge": false
+          },
+          {
+            "name": "Facilities for disabled guests",
+            "additional_charge": false
+          },
+          {
+            "name": "Non-smoking rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Iron",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Accessibility": {
+        "note": null,
+        "items": [
+          {
+            "name": "Raised toilet",
+            "additional_charge": false
+          },
+          {
+            "name": "Wheelchair accessible",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Outdoor swimming pool": {
+        "note": null,
+        "items": [
+          {
+            "name": "Opening times",
+            "additional_charge": false
+          },
+          {
+            "name": "Open all year",
+            "additional_charge": false
+          },
+          {
+            "name": "All ages welcome",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool/Beach towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Languages Spoken": {
+        "note": null,
+        "items": [
+          {
+            "name": "German",
+            "additional_charge": false
+          },
+          {
+            "name": "English",
+            "additional_charge": false
+          }
+        ]
+      }
+    },
+    "sustainability": null,
     "awards": [],
     "area_info": {
-      "Top attractions": [
+      "What's nearby": [
+        {
+          "name": "Quinta dos Patudos",
+          "type": null,
+          "distance_m": 5000
+        },
+        {
+          "name": "Igreja Nossa Senhora da Visitação",
+          "type": null,
+          "distance_m": 11000
+        },
+        {
+          "name": "Solar da Quinta da Cruz",
+          "type": null,
+          "distance_m": 14000
+        },
+        {
+          "name": "Castelo de Paderne",
+          "type": null,
+          "distance_m": 14000
+        },
+        {
+          "name": "Cruz de Portugal de Silves",
+          "type": null,
+          "distance_m": 15000
+        },
+        {
+          "name": "The Cross of Portugal",
+          "type": null,
+          "distance_m": 15000
+        },
         {
           "name": "Castle of Silves",
+          "type": null,
+          "distance_m": 16000
+        },
+        {
+          "name": "Sé Catedral de Silves",
           "type": null,
           "distance_m": 16000
         },
@@ -160,7 +1460,26 @@
           "name": "Roman Bridge of Silves",
           "type": null,
           "distance_m": 17000
+        }
+      ],
+      "Restaurants & cafes": [
+        {
+          "name": "Churrasqueira Frango Dourado",
+          "type": "Restaurant",
+          "distance_m": 2000
         },
+        {
+          "name": "Mussiene",
+          "type": "Restaurant",
+          "distance_m": 3800
+        },
+        {
+          "name": "Restaurante O Foral",
+          "type": "Restaurant",
+          "distance_m": 5000
+        }
+      ],
+      "Top attractions": [
         {
           "name": "Albufeira Old Town Square",
           "type": null,
@@ -195,23 +1514,6 @@
           "name": "Pau da Bandeira Belvedere",
           "type": null,
           "distance_m": 19000
-        }
-      ],
-      "Restaurants & cafes": [
-        {
-          "name": "Churrasqueira Frango Dourado",
-          "type": "Restaurant",
-          "distance_m": 2000
-        },
-        {
-          "name": "Mussiene",
-          "type": "Restaurant",
-          "distance_m": 3800
-        },
-        {
-          "name": "Tropic Bar",
-          "type": "Cafe/Bar",
-          "distance_m": 4600
         }
       ],
       "Public transit": [
@@ -246,7 +1548,7 @@
     },
     "lat": 37.219072540639,
     "lng": -8.28458646028,
-    "scraped_at": "2026-05-11T12:32:40.541Z"
+    "scraped_at": "2026-05-11T13:32:50.799Z"
   },
   {
     "url": "https://www.booking.com/hotel/pt/monte-da-quinta-suites.html",
@@ -259,8 +1561,8 @@
     "star_rating": 5,
     "property_type": "hotel",
     "overall_score": 9,
-    "score_label": null,
-    "num_reviews": null,
+    "score_label": "Wonderful",
+    "num_reviews": 1287,
     "subscores": {
       "Staff": 9.5,
       "Facilities": 9.1,
@@ -280,7 +1582,17 @@
       "Loyal Customers",
       "There are more repeat guests here than most other properties."
     ],
-    "facilities": [
+    "most_popular_facilities": [
+      "3 swimming pools",
+      "Spa",
+      "Free Wifi",
+      "Free parking",
+      "Family rooms",
+      "Airport shuttle",
+      "4 restaurants",
+      "Tea/Coffee Maker in All Rooms",
+      "Bar",
+      "Exceptional Breakfast",
       "3 swimming pools",
       "Spa",
       "Free Wifi",
@@ -292,10 +1604,976 @@
       "Bar",
       "Exceptional Breakfast"
     ],
-    "facilities_grouped": {},
+    "facilities": [
+      "3 swimming pools",
+      "Spa",
+      "Free Wifi",
+      "Free parking",
+      "Family rooms",
+      "Airport shuttle",
+      "4 restaurants",
+      "Tea/Coffee Maker in All Rooms",
+      "Bar",
+      "Exceptional Breakfast",
+      "Parking",
+      "Balcony",
+      "Private bathroom",
+      "Air conditioning",
+      "Bathtub",
+      "View",
+      "Toilet paper",
+      "Towels",
+      "Additional bathroom",
+      "Bidet",
+      "Guest bathroom",
+      "Bathtub or shower",
+      "Slippers",
+      "Toilet",
+      "Free toiletries",
+      "Bathrobe",
+      "Hairdryer",
+      "Linens",
+      "Wardrobe or closet",
+      "Garden view",
+      "Outdoor furniture",
+      "Outdoor dining area",
+      "Sun deck",
+      "Terrace",
+      "Garden",
+      "High chair",
+      "Dining table",
+      "Coffee machine",
+      "Toaster",
+      "Stovetop",
+      "Oven",
+      "Kitchenware",
+      "Electric kettle",
+      "Dishwasher",
+      "Microwave",
+      "Refrigerator",
+      "Kitchenette",
+      "Socket near the bed",
+      "Sofa bed",
+      "Clothes rack",
+      "Bicycle rental",
+      "Live sports events (broadcast)",
+      "Live music/Performance",
+      "Cooking class",
+      "Bike tours",
+      "Walking tours",
+      "Kids' club",
+      "Horseback riding",
+      "Cycling",
+      "Hiking",
+      "Canoeing",
+      "Ping-pong",
+      "Playground",
+      "Fishing",
+      "Golf course (within 2 miles)",
+      "Dining area",
+      "Sofa",
+      "Sitting area",
+      "Flat-screen TV",
+      "Telephone",
+      "TV",
+      "Fruit",
+      "Wine/Champagne",
+      "Kid-friendly buffet",
+      "Special diet meals (on request)",
+      "Snack bar",
+      "Minibar",
+      "Restaurant",
+      "Tea/Coffee maker",
+      "Parking garage",
+      "Electric vehicle charging station",
+      "Accessible parking",
+      "Invoice provided",
+      "Concierge",
+      "ATM on site",
+      "Baggage storage",
+      "24-hour front desk",
+      "Baby safety gates",
+      "Babysitting/Child services",
+      "Outdoor play equipment for kids",
+      "Daily housekeeping",
+      "Ironing service",
+      "Laundry",
+      "Fax/Photocopying",
+      "Meeting/Banquet facilities",
+      "Fire extinguishers",
+      "CCTV outside property",
+      "CCTV in common areas",
+      "Smoke alarms",
+      "Security alarm",
+      "Key card access",
+      "Key access",
+      "Safe",
+      "Shuttle service",
+      "Shared lounge/TV area",
+      "Smoke-free property",
+      "Wake-up service",
+      "Tile/Marble floor",
+      "Heating",
+      "Soundproof",
+      "Private entrance",
+      "Car rental",
+      "Packed lunches",
+      "Soundproof rooms",
+      "Elevator",
+      "Ironing facilities",
+      "Facilities for disabled guests",
+      "Non-smoking rooms",
+      "Iron",
+      "Room service",
+      "Wheelchair accessible",
+      "Entire unit wheelchair accessible",
+      "Upper floors accessible by elevator",
+      "Open all year",
+      "All ages welcome",
+      "Shallow end",
+      "Pool/Beach towels",
+      "Beach chairs/Loungers",
+      "Beach umbrellas",
+      "Suitable for kids",
+      "Pool bar",
+      "Heated pool",
+      "Kids' pool",
+      "Locker rooms",
+      "Spa/Wellness packages",
+      "Spa lounge/Relaxation area",
+      "Steam room",
+      "Spa facilities",
+      "Body treatments",
+      "Waxing services",
+      "Facial treatments",
+      "Beauty services",
+      "Turkish/Steam Bath",
+      "Hot tub/Jacuzzi",
+      "Massage",
+      "Fitness center",
+      "Sauna",
+      "German",
+      "English",
+      "Spanish",
+      "French",
+      "Portuguese"
+    ],
+    "facilities_grouped": {
+      "Great for your stay": {
+        "note": null,
+        "items": [
+          {
+            "name": "Parking",
+            "additional_charge": false
+          },
+          {
+            "name": "4 restaurants",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa",
+            "additional_charge": false
+          },
+          {
+            "name": "Balcony",
+            "additional_charge": false
+          },
+          {
+            "name": "Private bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Air conditioning",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathtub",
+            "additional_charge": false
+          },
+          {
+            "name": "View",
+            "additional_charge": false
+          },
+          {
+            "name": "Free Wifi",
+            "additional_charge": false
+          },
+          {
+            "name": "Free parking",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Private bathroom": {
+        "note": null,
+        "items": [
+          {
+            "name": "Toilet paper",
+            "additional_charge": false
+          },
+          {
+            "name": "Towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Additional bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Bidet",
+            "additional_charge": false
+          },
+          {
+            "name": "Guest bathroom",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathtub or shower",
+            "additional_charge": false
+          },
+          {
+            "name": "Slippers",
+            "additional_charge": false
+          },
+          {
+            "name": "Toilet",
+            "additional_charge": false
+          },
+          {
+            "name": "Free toiletries",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathrobe",
+            "additional_charge": false
+          },
+          {
+            "name": "Hairdryer",
+            "additional_charge": false
+          },
+          {
+            "name": "Bathtub",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Bedroom": {
+        "note": null,
+        "items": [
+          {
+            "name": "Linens",
+            "additional_charge": false
+          },
+          {
+            "name": "Wardrobe or closet",
+            "additional_charge": false
+          }
+        ]
+      },
+      "View": {
+        "note": null,
+        "items": [
+          {
+            "name": "Garden view",
+            "additional_charge": false
+          },
+          {
+            "name": "View",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Outdoors": {
+        "note": null,
+        "items": [
+          {
+            "name": "Outdoor furniture",
+            "additional_charge": false
+          },
+          {
+            "name": "Outdoor dining area",
+            "additional_charge": false
+          },
+          {
+            "name": "Sun deck",
+            "additional_charge": false
+          },
+          {
+            "name": "Balcony",
+            "additional_charge": false
+          },
+          {
+            "name": "Terrace",
+            "additional_charge": false
+          },
+          {
+            "name": "Garden",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Kitchen": {
+        "note": null,
+        "items": [
+          {
+            "name": "High chair",
+            "additional_charge": false
+          },
+          {
+            "name": "Dining table",
+            "additional_charge": false
+          },
+          {
+            "name": "Coffee machine",
+            "additional_charge": false
+          },
+          {
+            "name": "Toaster",
+            "additional_charge": false
+          },
+          {
+            "name": "Stovetop",
+            "additional_charge": false
+          },
+          {
+            "name": "Oven",
+            "additional_charge": false
+          },
+          {
+            "name": "Kitchenware",
+            "additional_charge": false
+          },
+          {
+            "name": "Electric kettle",
+            "additional_charge": false
+          },
+          {
+            "name": "Dishwasher",
+            "additional_charge": false
+          },
+          {
+            "name": "Microwave",
+            "additional_charge": false
+          },
+          {
+            "name": "Refrigerator",
+            "additional_charge": false
+          },
+          {
+            "name": "Kitchenette",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Room amenities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Socket near the bed",
+            "additional_charge": false
+          },
+          {
+            "name": "Sofa bed",
+            "additional_charge": false
+          },
+          {
+            "name": "Clothes rack",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Activities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Bicycle rental",
+            "additional_charge": true
+          },
+          {
+            "name": "Live sports events (broadcast)",
+            "additional_charge": false
+          },
+          {
+            "name": "Live music/Performance",
+            "additional_charge": false
+          },
+          {
+            "name": "Cooking class",
+            "additional_charge": true
+          },
+          {
+            "name": "Bike tours",
+            "additional_charge": true
+          },
+          {
+            "name": "Walking tours",
+            "additional_charge": true
+          },
+          {
+            "name": "Kids' club",
+            "additional_charge": false
+          },
+          {
+            "name": "Horseback riding",
+            "additional_charge": true
+          },
+          {
+            "name": "Cycling",
+            "additional_charge": false
+          },
+          {
+            "name": "Hiking",
+            "additional_charge": true
+          },
+          {
+            "name": "Canoeing",
+            "additional_charge": true
+          },
+          {
+            "name": "Ping-pong",
+            "additional_charge": false
+          },
+          {
+            "name": "Playground",
+            "additional_charge": false
+          },
+          {
+            "name": "Fishing",
+            "additional_charge": true
+          },
+          {
+            "name": "Golf course (within 2 miles)",
+            "additional_charge": true
+          }
+        ]
+      },
+      "Living Area": {
+        "note": null,
+        "items": [
+          {
+            "name": "Dining area",
+            "additional_charge": false
+          },
+          {
+            "name": "Sofa",
+            "additional_charge": false
+          },
+          {
+            "name": "Sitting area",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Media & Technology": {
+        "note": null,
+        "items": [
+          {
+            "name": "Flat-screen TV",
+            "additional_charge": false
+          },
+          {
+            "name": "Telephone",
+            "additional_charge": false
+          },
+          {
+            "name": "TV",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Food & Drink": {
+        "note": null,
+        "items": [
+          {
+            "name": "Fruit",
+            "additional_charge": true
+          },
+          {
+            "name": "Wine/Champagne",
+            "additional_charge": true
+          },
+          {
+            "name": "Kid-friendly buffet",
+            "additional_charge": false
+          },
+          {
+            "name": "Special diet meals (on request)",
+            "additional_charge": false
+          },
+          {
+            "name": "Snack bar",
+            "additional_charge": false
+          },
+          {
+            "name": "Bar",
+            "additional_charge": false
+          },
+          {
+            "name": "Minibar",
+            "additional_charge": false
+          },
+          {
+            "name": "Restaurant",
+            "additional_charge": false
+          },
+          {
+            "name": "Tea/Coffee maker",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Internet": {
+        "note": "Wifi is available in all areas and is free of charge.",
+        "items": []
+      },
+      "Parking": {
+        "note": "Free private parking is available on site (reservation is not needed).",
+        "items": [
+          {
+            "name": "Parking garage",
+            "additional_charge": false
+          },
+          {
+            "name": "Electric vehicle charging station",
+            "additional_charge": false
+          },
+          {
+            "name": "Accessible parking",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Front Desk Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Invoice provided",
+            "additional_charge": false
+          },
+          {
+            "name": "Concierge",
+            "additional_charge": false
+          },
+          {
+            "name": "ATM on site",
+            "additional_charge": false
+          },
+          {
+            "name": "Baggage storage",
+            "additional_charge": false
+          },
+          {
+            "name": "24-hour front desk",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Entertainment & Family Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Baby safety gates",
+            "additional_charge": false
+          },
+          {
+            "name": "Babysitting/Child services",
+            "additional_charge": true
+          },
+          {
+            "name": "Outdoor play equipment for kids",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Cleaning Services": {
+        "note": null,
+        "items": [
+          {
+            "name": "Daily housekeeping",
+            "additional_charge": false
+          },
+          {
+            "name": "Ironing service",
+            "additional_charge": true
+          },
+          {
+            "name": "Laundry",
+            "additional_charge": true
+          }
+        ]
+      },
+      "Business Facilities": {
+        "note": null,
+        "items": [
+          {
+            "name": "Fax/Photocopying",
+            "additional_charge": true
+          },
+          {
+            "name": "Meeting/Banquet facilities",
+            "additional_charge": true
+          }
+        ]
+      },
+      "Safety & security": {
+        "note": null,
+        "items": [
+          {
+            "name": "Fire extinguishers",
+            "additional_charge": false
+          },
+          {
+            "name": "CCTV outside property",
+            "additional_charge": false
+          },
+          {
+            "name": "CCTV in common areas",
+            "additional_charge": false
+          },
+          {
+            "name": "Smoke alarms",
+            "additional_charge": false
+          },
+          {
+            "name": "Security alarm",
+            "additional_charge": false
+          },
+          {
+            "name": "Key card access",
+            "additional_charge": false
+          },
+          {
+            "name": "Key access",
+            "additional_charge": false
+          },
+          {
+            "name": "Safe",
+            "additional_charge": false
+          }
+        ]
+      },
+      "General": {
+        "note": null,
+        "items": [
+          {
+            "name": "Shuttle service",
+            "additional_charge": true
+          },
+          {
+            "name": "Shared lounge/TV area",
+            "additional_charge": false
+          },
+          {
+            "name": "Air conditioning",
+            "additional_charge": false
+          },
+          {
+            "name": "Smoke-free property",
+            "additional_charge": false
+          },
+          {
+            "name": "Wake-up service",
+            "additional_charge": false
+          },
+          {
+            "name": "Tile/Marble floor",
+            "additional_charge": false
+          },
+          {
+            "name": "Heating",
+            "additional_charge": false
+          },
+          {
+            "name": "Soundproof",
+            "additional_charge": false
+          },
+          {
+            "name": "Private entrance",
+            "additional_charge": false
+          },
+          {
+            "name": "Car rental",
+            "additional_charge": false
+          },
+          {
+            "name": "Packed lunches",
+            "additional_charge": false
+          },
+          {
+            "name": "Soundproof rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Elevator",
+            "additional_charge": false
+          },
+          {
+            "name": "Family rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Ironing facilities",
+            "additional_charge": false
+          },
+          {
+            "name": "Facilities for disabled guests",
+            "additional_charge": false
+          },
+          {
+            "name": "Airport shuttle",
+            "additional_charge": true
+          },
+          {
+            "name": "Non-smoking rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Iron",
+            "additional_charge": false
+          },
+          {
+            "name": "Room service",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Accessibility": {
+        "note": null,
+        "items": [
+          {
+            "name": "Wheelchair accessible",
+            "additional_charge": false
+          },
+          {
+            "name": "Entire unit wheelchair accessible",
+            "additional_charge": false
+          },
+          {
+            "name": "Upper floors accessible by elevator",
+            "additional_charge": false
+          }
+        ]
+      },
+      "3 swimming pools": {
+        "note": null,
+        "items": [
+          {
+            "name": "Open all year",
+            "additional_charge": false
+          },
+          {
+            "name": "All ages welcome",
+            "additional_charge": false
+          },
+          {
+            "name": "Shallow end",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool/Beach towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          },
+          {
+            "name": "Open all year",
+            "additional_charge": false
+          },
+          {
+            "name": "Suitable for kids",
+            "additional_charge": false
+          },
+          {
+            "name": "Shallow end",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool/Beach towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool bar",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          },
+          {
+            "name": "Open all year",
+            "additional_charge": false
+          },
+          {
+            "name": "All ages welcome",
+            "additional_charge": false
+          },
+          {
+            "name": "Heated pool",
+            "additional_charge": false
+          },
+          {
+            "name": "Pool/Beach towels",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Spa": {
+        "note": null,
+        "items": [
+          {
+            "name": "Kids' pool",
+            "additional_charge": false
+          },
+          {
+            "name": "Locker rooms",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa/Wellness packages",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa lounge/Relaxation area",
+            "additional_charge": false
+          },
+          {
+            "name": "Steam room",
+            "additional_charge": false
+          },
+          {
+            "name": "Spa facilities",
+            "additional_charge": false
+          },
+          {
+            "name": "Body treatments",
+            "additional_charge": false
+          },
+          {
+            "name": "Waxing services",
+            "additional_charge": false
+          },
+          {
+            "name": "Facial treatments",
+            "additional_charge": false
+          },
+          {
+            "name": "Beauty services",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach umbrellas",
+            "additional_charge": false
+          },
+          {
+            "name": "Beach chairs/Loungers",
+            "additional_charge": false
+          },
+          {
+            "name": "Turkish/Steam Bath",
+            "additional_charge": false
+          },
+          {
+            "name": "Hot tub/Jacuzzi",
+            "additional_charge": false
+          },
+          {
+            "name": "Massage",
+            "additional_charge": true
+          },
+          {
+            "name": "Spa",
+            "additional_charge": false
+          },
+          {
+            "name": "Fitness center",
+            "additional_charge": false
+          },
+          {
+            "name": "Sauna",
+            "additional_charge": false
+          }
+        ]
+      },
+      "Languages Spoken": {
+        "note": null,
+        "items": [
+          {
+            "name": "German",
+            "additional_charge": false
+          },
+          {
+            "name": "English",
+            "additional_charge": false
+          },
+          {
+            "name": "Spanish",
+            "additional_charge": false
+          },
+          {
+            "name": "French",
+            "additional_charge": false
+          },
+          {
+            "name": "Portuguese",
+            "additional_charge": false
+          }
+        ]
+      }
+    },
+    "sustainability": {
+      "description": "This property has 2 third-party sustainability certifications. Learn more about certifications",
+      "certifications": [
+        "Biosphere Certification",
+        "Green Key (FEE)"
+      ]
+    },
     "awards": [],
     "area_info": {
-      "Top attractions": [
+      "What's nearby": [
+        {
+          "name": "Parque Natural da Ria Formosa",
+          "type": null,
+          "distance_m": 0
+        },
+        {
+          "name": "Jardim das Comunidades",
+          "type": null,
+          "distance_m": 5000
+        },
+        {
+          "name": "Partee Family Park",
+          "type": null,
+          "distance_m": 6000
+        },
+        {
+          "name": "Solar do Capitão Mor",
+          "type": null,
+          "distance_m": 10000
+        },
+        {
+          "name": "Parque Ribeirinho de Faro",
+          "type": null,
+          "distance_m": 11000
+        },
+        {
+          "name": "Tribo dos Reguilas",
+          "type": null,
+          "distance_m": 12000
+        },
         {
           "name": "Algarve Live Science Centre",
           "type": null,
@@ -315,16 +2593,6 @@
           "name": "Palacete Belmarço",
           "type": null,
           "distance_m": 12000
-        },
-        {
-          "name": "Roman Ruins Cerro da Vila",
-          "type": null,
-          "distance_m": 14000
-        },
-        {
-          "name": "Ruins of Milreu in Estoi",
-          "type": null,
-          "distance_m": 17000
         }
       ],
       "Restaurants & cafes": [
@@ -342,6 +2610,18 @@
           "name": "Il Vero Italian Kitchen & Bar",
           "type": "Restaurant",
           "distance_m": 850
+        }
+      ],
+      "Top attractions": [
+        {
+          "name": "Roman Ruins Cerro da Vila",
+          "type": null,
+          "distance_m": 14000
+        },
+        {
+          "name": "Ruins of Milreu in Estoi",
+          "type": null,
+          "distance_m": 17000
         }
       ],
       "Beaches in the Neighborhood": [
@@ -373,12 +2653,12 @@
       ],
       "Public transit": [
         {
-          "name": "Almancil",
+          "name": "Parque das Cidades",
           "type": "Train",
           "distance_m": 7000
         },
         {
-          "name": "Parque das Cidades",
+          "name": "Almancil",
           "type": "Train",
           "distance_m": 7000
         }
@@ -398,170 +2678,6 @@
     },
     "lat": 37.04096037024533,
     "lng": -8.01477313041687,
-    "scraped_at": "2026-05-11T12:33:24.578Z"
-  },
-  {
-    "url": "https://www.booking.com/hotel/pt/jupiter-albufeira-hotel.html",
-    "hotel_id": "38733",
-    "name": "Jupiter Albufeira Hotel - Family & Fun - All Inclusive 24h",
-    "city": "Albufeira",
-    "region": "Algarve",
-    "country": "Portugal",
-    "dest_name": "Albufeira, Algarve, Portugal",
-    "star_rating": 5,
-    "property_type": "hotel",
-    "overall_score": 8.7,
-    "score_label": null,
-    "num_reviews": null,
-    "subscores": {
-      "Staff": 9.3,
-      "Facilities": 9,
-      "Cleanliness": 9.2,
-      "Comfort": 9.1,
-      "Value for money": 8.5,
-      "Location": 8.4,
-      "Free Wifi": 9.3
-    },
-    "description": "The renovated 5-star Jupiter Albufeira Hotel - Family & Fun - All Inclusive 24h is located in the tranquil Montechoro area within a 10-minute drive from Oura Beach and Albufeira’s center. It features a water park, several outdoor pools, a Spa and a great all inclusive program.\n\nAll rooms feature a modern décor, a private balcony and a private bathroom with walk-in shower. Each is prepared to perfectly accommodate families with small children.\n\nThe hotel offers two buffet restaurants that serve continuous meals from breakfast through dinner. Additionally, guests who stay for a minimum of seven nights can enjoy one meal at the themed restaurants, Alecrim (à la carte) or Taberna (set menu).\n\nThe rooftop bar Al Gharb offers stunning views over Albufeira and the ocean, making it the perfect setting to end the day. The Spa is available for a surcharge and includes a sauna, a steam room and an indoor swimming pool. Guests can access the 24-hour fitness room for free.\n\nA complimentary free shuttle service up to 2 to 6 times per day is provided to Albufeira’s old town center. Faro International Airport is 24 mi away.",
-    "highlights": [
-      "Top Location: Highly rated by recent guests (8.4)",
-      "Breakfast Info",
-      "Full English/Irish, Gluten-free, American, Buffet",
-      "Private parking at the hotel"
-    ],
-    "facilities": [
-      "5 swimming pools",
-      "Private Parking",
-      "Free Wifi",
-      "Spa",
-      "Family rooms",
-      "Airport shuttle",
-      "5 restaurants",
-      "Tea/Coffee Maker in All Rooms",
-      "Bar",
-      "Wonderful Breakfast"
-    ],
-    "facilities_grouped": {},
-    "awards": [],
-    "area_info": {
-      "Top attractions": [
-        {
-          "name": "Pau da Bandeira Belvedere",
-          "type": null,
-          "distance_m": 2800
-        },
-        {
-          "name": "Fishermen's Square",
-          "type": null,
-          "distance_m": 2900
-        },
-        {
-          "name": "Albufeira Old Town Square",
-          "type": null,
-          "distance_m": 3100
-        },
-        {
-          "name": "Traces of the Old Castle Wall",
-          "type": null,
-          "distance_m": 3200
-        },
-        {
-          "name": "Clock Tower Albufeira",
-          "type": null,
-          "distance_m": 3300
-        },
-        {
-          "name": "Church of Sao Sebastiao - Sacred Art Museum",
-          "type": null,
-          "distance_m": 3300
-        },
-        {
-          "name": "Municipal Museum of Archaeology",
-          "type": null,
-          "distance_m": 3300
-        },
-        {
-          "name": "Roman Ruins Cerro da Vila",
-          "type": null,
-          "distance_m": 15000
-        }
-      ],
-      "Restaurants & cafes": [
-        {
-          "name": "Império do Pastel Brasileiro",
-          "type": "Restaurant",
-          "distance_m": 150
-        },
-        {
-          "name": "Restaurante O Manuel dos Frangos",
-          "type": "Restaurant",
-          "distance_m": 150
-        },
-        {
-          "name": "Chor Wok",
-          "type": "Restaurant",
-          "distance_m": 200
-        }
-      ],
-      "Beaches in the Neighborhood": [
-        {
-          "name": "Oura Beach",
-          "type": null,
-          "distance_m": 2200
-        },
-        {
-          "name": "Alemaes Beach",
-          "type": null,
-          "distance_m": 2300
-        },
-        {
-          "name": "Inatel Beach",
-          "type": null,
-          "distance_m": 2500
-        },
-        {
-          "name": "Aveiros Beach",
-          "type": null,
-          "distance_m": 2600
-        },
-        {
-          "name": "Santa Eulália Beach",
-          "type": null,
-          "distance_m": 2800
-        }
-      ],
-      "Public transit": [
-        {
-          "name": "Albufeira Main Bus Station",
-          "type": "Bus",
-          "distance_m": 2100
-        },
-        {
-          "name": "Albufeira Train Station",
-          "type": "Train",
-          "distance_m": 4100
-        },
-        {
-          "name": "Boliqueime",
-          "type": "Train",
-          "distance_m": 9000
-        }
-      ],
-      "Closest Airports": [
-        {
-          "name": "Faro Airport",
-          "type": null,
-          "distance_m": 35000
-        },
-        {
-          "name": "Portimão Airport",
-          "type": null,
-          "distance_m": 40000
-        }
-      ]
-    },
-    "lat": 37.10025443279031,
-    "lng": -8.228396326303482,
-    "scraped_at": "2026-05-11T12:34:08.250Z"
+    "scraped_at": "2026-05-11T13:33:07.210Z"
   }
 ]
