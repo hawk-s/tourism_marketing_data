@@ -18,8 +18,10 @@ from openpyxl import load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-INPUT_FILE  = Path("booking_hotels_data.json")
-OUTPUT_FILE = Path("booking_hotels_data.xlsx")
+# Paths relative to this script file so it works from any working directory
+_HERE       = Path(__file__).parent
+INPUT_FILE  = _HERE / "booking_hotels_data.json"
+OUTPUT_FILE = _HERE / "booking_hotels_data.xlsx"
 
 # ── Load data ──────────────────────────────────────────────────────────────────
 with INPUT_FILE.open(encoding="utf-8") as f:

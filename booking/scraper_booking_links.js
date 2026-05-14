@@ -1,4 +1,5 @@
-const fs = require("fs");
+const fs   = require("fs");
+const path = require("path");
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
@@ -6,7 +7,8 @@ puppeteer.use(StealthPlugin());
 
 const SEARCH_URL =
   "https://www.booking.com/searchresults.html?region=1064&order=class";
-const OUTPUT_FILE = "booking_hotel_links.json";
+// Use __dirname so the output file lands next to this script, not in cwd.
+const OUTPUT_FILE = path.join(__dirname, "booking_hotel_links.json");
 const SAVE_EVERY_N_LINKS = 25;
 
 let shutdownRequested = false;

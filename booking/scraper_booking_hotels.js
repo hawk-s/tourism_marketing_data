@@ -1,13 +1,16 @@
-const fs = require("fs");
+const fs   = require("fs");
+const path = require("path");
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 puppeteer.use(StealthPlugin());
 
 // ─── Configuration ─────────────────────────────────────────────────────────────
-const LINKS_FILE      = "booking_hotel_links.json";
-const HOTELS_OUTPUT   = "booking_hotels_data.json";
-const REVIEWS_OUTPUT  = "booking_reviews_data.json";
+// Use __dirname so paths are always relative to this script file, regardless
+// of the working directory you run `node` from.
+const LINKS_FILE      = path.join(__dirname, "booking_hotel_links.json");
+const HOTELS_OUTPUT   = path.join(__dirname, "booking_hotels_data.json");
+const REVIEWS_OUTPUT  = path.join(__dirname, "booking_reviews_data.json");
 
 const SAVE_EVERY_N_HOTELS   = 5;      // write to disk after every N hotels
 const MAX_REVIEW_PAGES      = 10;     // cap per hotel: 50 pages × 10 = 500 reviews
